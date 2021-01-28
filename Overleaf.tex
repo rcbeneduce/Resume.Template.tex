@@ -1,0 +1,253 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume-openfont}
+
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Ryan}{Beneduce}{ \urlstyle{same}\href{rbeneduc@ucsd.edu}{rbeneduc@ucsd.edu}| 602.819.4812 | \href{http://ryanbeneduce}{ryanbeneduce.com}\\
+\descript{\medium "Outspoken individual possessing relentless determination to innovate at Atlis Motor Vehicles"}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.3\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{\large University of California}
+\descript{\medium MS-Structural Engineering}
+\location{Grad. June 2021 | La Jolla, CA}\\
+Cum. GPA: 3.5 / 4.0
+\sectionsep
+
+\subsection{\large Drexel University}
+\descript{\medium BS- Civil Engineering}
+\location{Grad. June 2018 | Philadelphia, PA}\\
+Cum. GPA: 3.35 / 4.0
+\vspace{-0.2cm}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\vspace{-0.1cm}
+Computational Finite Elements \\
+Structural Dynamics\\
+Sensors and Data Acquisition\\
+Aerospace Structural Repair \\
+Data Mining and Predictive Analytics \\ 
+Structural Health Monitoring \\
+Non-destructive Evaluation\\
+Principles of Artificial Intelligence\\
+
+\vspace{-0.2cm}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Certifications}
+\vspace{-0.1cm}
+Engineer in Training\\
+Certified Bridge Safety Inspector\\
+NHI Safety Inspection of Bridges \\
+OSHA 10-HR Certified\\
+NJTransit Roadway Contractor\\
+\vspace{-0.2cm}
+\sectionsep
+
+\section{Affilitations}
+\vspace{-0.1cm}
+American Society of Civil Engineers \\
+Architectural Engineering Institute \\
+Chi Epsilon Civil Engineering Honors \\
+Delta Epsilon Iota Honors Society \\
+Structural Engineering Institute \\
+
+\section{Honors}
+\vspace{-0.1cm}
+Order of the Engineer \\
+Student Conference Advisory Panel \\
+Office of Disability Note Taker \\
+Responsive Fascades Initiative\\
+
+\section{Activities}
+\vspace{-0.1cm}
+\subsection{\large Triton UAS (Airframe)}
+Student run team which designs, builds, tests, and flies their own unmanned aerial vehicle (UAV).I am designing the new UAV structural framing by utilizing MATLAB to design and analyze the forces of lift on our structure, and verifying results with Abaqus finite element software. Major focus on optimization of design process by Python.\\
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.67\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+
+\vspace{-0.1cm}
+\runsubsection{\large University of California}
+\descript{| Information Technology}
+\location{September 2020 - Current | La Jolla, CA }
+\sublocation{Providing world-class customer support for the UC-San Diego world-wide community}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \begin{tightemize}
+        \item Supporting the transition from in-person to online technology infrastructure
+        \item Diagnosing customer technological issue and troubleshooting in a timely manner
+        \item Collaborating with database of technical support to provide efficient service
+    \end{tightemize}
+\sectionsep
+
+\vspace{-0.1cm}
+\runsubsection{\large Transystems Corporation}
+\descript{| Assistant Project Manager}
+\location{April 2017 - July 2020 | Philadelphia, PA }
+\sublocation{Consultants providing experience and solutions to the transportation industry, specializing in the design and rehabilitation of historic civil structures} 
+    \begin{tightemize}
+        \item Managed 3 project spreadsheets totaling 60+ bridge assets a month
+        \item Developed monthly spreadsheet to account for project deliverables and invoices
+        \item Performed 2,000 hrs of non-destructive testing on bridge and culvert structures
+        \item Wrote 1,500 structural evaluation reports according to customer compliance
+        \item Designed standard bridge rehabilitation drawings using Microstation
+        \item Calculated load capacity of bridge and arch culvert structures
+    \end{tightemize}
+\sectionsep
+
+\vspace{-0.1cm}
+\runsubsection{\large City of Philadelphia}
+\descript{| Construction Management Co-Op}
+\location{April 2015 - April 2017 | Philadelphia, PA}
+\sublocation{Developing and managing construction projects at Philadelphia International Airport} \\
+   \begin{tightemize}
+        \item Facilitated construction of 12,000 feet of runways and taxiways 
+        \item Ensured 700-foot duct-bank project remained within contractual compliance 
+        \item Managed 1500-foot microtunneling operation under active taxiways and successfully completed overnight work on-time without airline delays or traffic 
+        \item Reviewed 80 change-order documents and approved within 2 days
+        \item Contractor reported minimal safety violations and project progressed within contractual scheduling permits
+        \end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.5cm}
+\section{Leadership}
+
+\vspace{-0.1cm}
+\runsubsection{\large University of California}
+\descript{| Teacher's Assistant}
+\location{September 2020 - Current | La, Jolla, CA}\\
+\sublocation{Nominated by faculty to lead a Sophomore mathematics and engineering course }  \\
+   \begin{tightemize}
+        \item Taught over 50 hrs classroom time over discussion and office hours
+        \end{tightemize}
+\sectionsep
+
+\vspace{-0.1cm}
+\runsubsection{\large Drexel University Ice Hockey}
+\descript{| Assistant Captain/Coach}
+\location{September 2014 - April 2020 | Philadelphia, PA}\\
+\sublocation{Men's Division 1 club hockey team competing against student-athletes in the region}\\
+   \begin{tightemize}
+        \item Nominated by 30 constituents and 3 coaches to assistant captaincy role
+        \item Awarded 3 National Championship tournament births, 3 regular season ECHA titles, 4 postseason ECHA titles in 5 seasons
+        \end{tightemize}
+\sectionsep
+
+\vspace{-0.4cm}
+\section{Committees}
+\vspace{-0.05cm}
+\runsubsection{\large University of California}
+\descript{| Academic Senate: Planning, Budget }
+\location{September 2020 - Current | La Jolla, CA}
+\sublocation{Graduate student representative within cohort of university faculty and staff }  \\
+ \begin{tightemize}
+        \item Evaluating future implications of 650M budget cut due to COVID-19 pandemic
+        \item Representing graduate students throughout the university by conferring with the Chancellor on planning, budget and resource allocations
+        \item Receive reports from and maintain a liaison with campus Committees
+    \end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
